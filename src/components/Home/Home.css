@@ -1,0 +1,89 @@
+#home {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeImage {
+  position: absolute;
+  top: 1rem;
+  right: 3vw;
+  z-index: -1;
+  object-fit: cover;
+  height: 50vh;
+  box-shadow: 5px 5px 1px 1px rgba(54, 35, 58, 0.2), -0.15em 0 0.4em #caabd9;
+  border-radius: 50%;
+}
+.homeContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.homeName {
+  color: #caabd9;
+}
+
+.homeParagraph {
+  font-size: medium;
+  letter-spacing: 1px;
+  font-weight: 300;
+  width: 60vw;
+}
+
+.btmImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+.home-links {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.home-links li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.home-links li a {
+  color: white;
+  font-size: 1cm;
+}
+.home-links li a:hover {
+  color: #caabd9;
+}
+
+@media screen and (max-width: 840px) {
+  .homeImage {
+    right: 3vw;
+  }
+  .homeContent {
+    font-size: 10vw;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+  .introText {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .homeImage {
+    right: 5vw;
+  }
+}
