@@ -57,9 +57,6 @@ export default function Contact() {
           <button className="submitbtn" value="Send" type="submit">
             Submit
           </button>
-          <div className="links">
-            <FaAddressCard />
-          </div>
         </form>
       </div>
     </section>

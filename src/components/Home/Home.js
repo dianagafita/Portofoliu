@@ -30,7 +30,7 @@ export default function Home() {
         <span className="hello">Hello,</span>
         <span className="introText">
           I'm <span className="homeName">Diana</span> <br />
-          Fronted Developer
+          Frontend Developer
         </span>
         <p className="homeParagraph"> {introText}</p>
         <LinkList />

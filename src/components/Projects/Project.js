@@ -1,17 +1,29 @@
 import "./Project.css";
-import prj1 from "./prj1.jpeg";
+import party from "./party.png";
+import foodStore from "./food.png";
+import eshop from "./e-shop.png";
 import { motion } from "framer-motion";
-
 const projectsText = `Here are some projects that I worked one.`;
 
 const projectsList = [
-  { name: "Pr1", image: prj1, imgName: "a" },
-  { name: "Pr2", image: prj1, imgName: "b" },
-  { name: "Pr3", image: prj1, imgName: "c" },
-  { name: "Pr3", image: prj1, imgName: "c" },
-  { name: "Pr3", image: prj1, imgName: "c" },
-  { name: "Pr3", image: prj1, imgName: "c" },
-  { name: "Pr3", image: prj1, imgName: "c" },
+  {
+    name: "Party Events",
+    image: party,
+    imgName: "PartyEvents",
+    link: "https://github.com/dianagafita/PartyEvents-nextJs",
+  },
+  {
+    name: "Food Store",
+    image: foodStore,
+    imgName: "b",
+    link: "https://github.com/dianagafita/food-ordering-site",
+  },
+  {
+    name: "E-Shop",
+    image: eshop,
+    imgName: "c",
+    link: "https://github.com/dianagafita/online-store",
+  },
 ];
 
 export default function Projects() {
@@ -21,13 +33,15 @@ export default function Projects() {
       <span className="projectsText">{projectsText}</span>
       <div className="projectImgs">
         {projectsList.map((project) => (
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            key={project.name}
-            src={project.image}
-            alt={project.imgName}
-            className="projImg"
-          />
+          <a href={project.link}>
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              key={project.name}
+              src={project.image}
+              alt={project.imgName}
+              className="projImg"
+            />
+          </a>
         ))}
       </div>
     </section>
